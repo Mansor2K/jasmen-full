@@ -1,0 +1,1 @@
+import{u as i}from"./index-D9-apHjd.js";import{i as s}from"./apiUsers-ClJSJGGs.js";function f(e){const{isLoading:r,data:t,error:n}=i({queryKey:["clientInfo",e],queryFn:({queryKey:u})=>{const[,o]=u;return s(o)},keepPreviousData:!0});return{isLoading:r,client:t,error:n}}export{f as u};

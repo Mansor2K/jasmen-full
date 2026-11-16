@@ -1,0 +1,1 @@
+import{b as r,j as e,L as s}from"./index-D9-apHjd.js";function a(){const[t]=r();return e.jsx("div",{className:"flex h-[100vh] items-center justify-center bg-primary text-center text-textColor",children:e.jsxs("div",{children:[e.jsx("h1",{className:"mb-[10px]",children:t("general.notFoundPage")}),e.jsx(s,{to:"/",replace:!0,children:"← Go back"})]})})}export{a as default};

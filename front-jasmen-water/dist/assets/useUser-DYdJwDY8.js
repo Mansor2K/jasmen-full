@@ -1,0 +1,1 @@
+import{u as a}from"./index-D9-apHjd.js";import{w as n}from"./apiUsers-ClJSJGGs.js";function m(r){const{isLoading:e,data:u,error:s}=a({queryKey:["userInfo",r],queryFn:({queryKey:t})=>{const[,o]=t;return n(o)},keepPreviousData:!0});return{isLoading:e,userData:u,error:s}}export{m as u};

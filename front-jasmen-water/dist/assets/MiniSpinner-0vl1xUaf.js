@@ -1,0 +1,1 @@
+import{j as e}from"./index-D9-apHjd.js";const s="_loader_1i602_1",r="_l9_1i602_1",n={loader:s,l9:r};function t(){return e.jsx("div",{className:"flex items-center justify-center rounded-md bg-secondary p-[30px]",children:e.jsx("div",{className:n.loader})})}export{t as M};

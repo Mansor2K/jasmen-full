@@ -1,0 +1,1 @@
+import{c as i,f as r}from"./index-D9-apHjd.js";import{g as u}from"./apiUsers-ClJSJGGs.js";function o(){const e=i(),{mutate:t,isPending:s}=r({mutationFn:u,onSuccess:()=>{e.invalidateQueries({queryKey:["UsersData"]}),e.invalidateQueries({queryKey:["userInfo"]})}});return{isUpdating:s,updateUser:t}}export{o as u};

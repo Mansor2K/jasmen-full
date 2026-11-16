@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+*[dir="ltr"] body {
+  font-family: Inter, sans-serif;
+}
+
+*[dir="rtl"] body {
+  font-family: Cairo, sans-serif;
+}
+
+@layer base {
+  :root {
+    &,
+    &.light-mode {
+      /* Grey */
+      --color-grey-0: #fff;
+      --color-grey-50: #f3f4f6;
+      --color-grey-900: #111827;
+    }
+
+    &.dark-mode {
+      /* --color-grey-0: #1d1d1f;
+      --color-grey-50: #07070b; */
+      --color-grey-0: #18212f;
+      --color-grey-50: #111827;
+      --color-grey-100: #1f2937;
+      --color-grey-900: #f9fafb;
+    }
+
+    /* Indigo */
+    --color-brand-50: #eef2ff;
+    --color-brand-100: #e0e7ff;
+    --color-brand-200: #c7d2fe;
+    --color-brand-500: #6366f1;
+    --color-brand-600: #4f46e5;
+    --color-brand-700: #4338ca;
+    --color-brand-800: #3730a3;
+    --color-brand-900: #312e81;
+  }
+}
+
+@layer components {
+  .form-input {
+    @apply w-full rounded-md border border-[#eee] bg-primary p-[10px] text-textColor outline-none transition-all placeholder:text-sm focus:border-colorBrand;
+  }
+
+  .action-style {
+    @apply flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary p-[5px] text-xl transition-all hover:border hover:bg-secondary;
+  }
+}
+
+/* add styles to active link */
+.links-list a.active {
+  background-color: var(--color-brand-600);
+}
+
+/* scrollbar Syles */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--color-grey-0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-brand-600);
+}
+
+/* Vertical scrollbar */
+*::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+/* Horizontal scrollbar */
+*::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+img,
+a {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
